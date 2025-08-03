@@ -1,9 +1,283 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>Hello World</title>
+    <meta charset="UTF-8">
+    <title>Tennis: Björn vs. Michael</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background-color: #f9f9f9;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        td {
+            background-color: #fff;
+        }
+        td:focus {
+            outline: 2px solid #007BFF;
+        }
+        .save-button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello World</h1>
+
+<h2>Tennis zwischen Björn und Michael</h2>
+<p>Daten zuletzt aktualisiert: 2025-08-03</p>
+
+<div id="table-container">
+    <table border="1" class="dataframe editable-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Datum</th>
+      <th>Ergebnis</th>
+      <th>Besonderheiten</th>
+      <th>Kosten Björn €</th>
+      <th>Kosten Michael €</th>
+      <th>Total €</th>
+      <th>Zusatzinfo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-03-21</td>
+      <td>6:4 6:2 6:1</td>
+      <td>2* Schläger geschmissen Björn</td>
+      <td>13.0</td>
+      <td></td>
+      <td>13</td>
+      <td>Regel:</td>
+    </tr>
+    <tr>
+      <td>2025-03-28</td>
+      <td>6:0 6:4 4:6</td>
+      <td></td>
+      <td>3.0</td>
+      <td>10.0</td>
+      <td>13</td>
+      <td>Pro Satz 1,-€ für Björn wenn er verliert</td>
+    </tr>
+    <tr>
+      <td>2025-07-04</td>
+      <td>6:0 6:1 6:0 6:1</td>
+      <td></td>
+      <td>6.0</td>
+      <td></td>
+      <td>6</td>
+      <td>Pro Satz 10,-€ für Michael wenn er verliert</td>
+    </tr>
+    <tr>
+      <td>2025-08-01</td>
+      <td>6:3 6:1 6:0 6:2</td>
+      <td>3* Schläger geschmissen</td>
+      <td>20.0</td>
+      <td></td>
+      <td>20</td>
+      <td>Pro Satz 2,-€ für Björn wenn er 6:0 verliert</td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>5,-€ für jedes Schläger schmeißen</td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>5,-€ für jedes Telefonieren</td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NaT</td>
+      <td></td>
+      <td></td>
+      <td>42.0</td>
+      <td>10.0</td>
+      <td>52</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<button class="save-button" onclick="downloadTable()">Tabelle herunterladen (CSV)</button>
+
+<script>
+    // Zellen editierbar machen
+    const cells = document.querySelectorAll("td");
+    cells.forEach(cell => {
+        cell.contentEditable = true;
+    });
+
+    function downloadTable() {
+        const rows = Array.from(document.querySelectorAll("table tr"));
+        const csv = rows.map(row => {
+            const cols = row.querySelectorAll("th, td");
+            return Array.from(cols).map(col => col.innerText.replace(/"/g, '""')).join(";");
+        }).join("\n");
+
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement("a");
+        link.setAttribute("href", URL.createObjectURL(blob));
+        link.setAttribute("download", "tennis_daten.csv");
+        link.style.display = "none";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
 </body>
 </html>
